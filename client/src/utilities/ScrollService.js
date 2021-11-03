@@ -25,7 +25,7 @@ export default class ScrollService {
   };
 
   scrollToHome = () => {
-    let homeScreen = document.getElementById("ContactMe");
+    let homeScreen = document.getElementById("Home");
     if (!homeScreen) return;
 
     homeScreen.scrollIntoView({ behavior: "smooth" });
