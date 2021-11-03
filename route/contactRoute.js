@@ -8,7 +8,7 @@ router.post("/contact", (req, res) => {
     data.email.length === 0 ||
     data.message.length === 0
   ) {
-    return res.json({ msg: "Please fill all the fields" });
+    return res.json({ msg: "Please Fill All The Fields!" });
   }
 
   let smtpTransporter = nodemailer.createTransport({
@@ -16,35 +16,33 @@ router.post("/contact", (req, res) => {
     port: 465,
     auth: {
       user: "lkrs0097@gmail.com",
-      pass: "luiskrojas1574Q",
+      pass: "luiskrojas1574Q@",
     },
   });
-
   let mailOptions = {
     from: data.email,
     to: "lkrs0097@gmail.com",
-    subject: `Mesagge from ${data.name}`,
+    subject: `Message from ${data.name}`,
     html: `
 
-        <h3>Informations</h3>
-        <ul>
-        <li>Name: ${data.name}</li>
-        <li>Email: ${data.email}</li>
-        </ul>
-        <h3>Message</h3>
-        <p>${data.message}</p>
-        `,
+            <h3>Informations<h3/>
+            <ul>
+            <li>Name: ${data.name}<li/>
+            <li>Email: ${data.email}<li/>
+            </ul>
+            <h3>Message</h3>
+            <p>${data.message}<p/>
+            `,
   };
 
   smtpTransporter.sendMail(mailOptions, (error) => {
     try {
       if (error)
-        return res.status(400).json({ msg: "Please fill all the flieds" });
-      res.status(200).json({ msg: "Thank you for contacting me" });
+        return res.status(400).json({ msg: "Please Fill All The Fields!" });
+      res.status(200).json({ msg: "Thank You For Contacting Me." });
     } catch (error) {
       if (error) return res.status(500).json({ msg: "There is server error" });
     }
   });
 });
-
 module.exports = router;

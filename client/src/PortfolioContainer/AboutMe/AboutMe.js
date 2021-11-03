@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
@@ -37,7 +37,7 @@ export default function AboutMe(props) {
 
   return (
     <div
-      className="about-me-container screen-container "
+      className="about-me-container screen-container fade-in"
       id={props.id || ""}
     >
       <div className="about-me-parent">

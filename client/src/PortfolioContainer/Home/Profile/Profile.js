@@ -51,7 +51,7 @@ export default function Profile() {
               </h1>
             </span>
             <span className="profile-role-tagline">
-              Knack of building applications with front and back end operations.
+              Knack of building applications with front operations.
             </span>
           </div>
 
@@ -66,7 +66,7 @@ export default function Profile() {
               href="HV_Luis_Carlos_Rojas.pdf"
               download={"HV_Luis_Carlos_Rojas.pdf"}
             >
-              <button className="btn highlighted-btn"> Get Resume </button>
+              <button className="btn highlighted-btn"> Get My Resume </button>
             </a>
           </div>
         </div>

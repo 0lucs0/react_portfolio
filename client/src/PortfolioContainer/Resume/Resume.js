@@ -239,7 +239,7 @@ const Resume = (props) => {
 
   return (
     <div
-      className="resume-container screen-container"
+      className="resume-container screen-container fadeInUp"
       id={props.id || ""}
     >
       <div className="resume-content">
