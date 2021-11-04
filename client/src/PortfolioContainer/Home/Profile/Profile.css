@@ -5,7 +5,6 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
-  background-image: url("../../../assets/Home/bg.jpg");
 }
 .profile-parent {
   display: flex;
@@ -69,7 +68,7 @@
   transition: 1s ease-out;
 }
 
-.colz .cols-icon i {
+.colz .colz-icon i {
   color: white;
   padding: 8px;
   padding-left: 0px;
